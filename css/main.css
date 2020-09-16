@@ -61,6 +61,13 @@ h1 {
   right: 20px;
 }
 
+a.left img {
+  width: 15%;
+   position: absolute;
+   top: 8px;
+   left: 16px;
+}
+
 /* ---------- tabbar styling ---------- */
 .tabbar {
   background-color: var(--green);
@@ -108,10 +115,13 @@ h1 {
 
 
 /* ------- Welcome Page ------*/
-.mideo-logo {
-  width: 120px;
+#welcome {
+  background-color:;
+ 
 }
-
+#welcome-page img {
+  width: 100%;
+}
 
 
 
@@ -190,6 +200,8 @@ h1 {
 
 
 /* ------ Filters / Category -----*/
+
+
 #filters-wrap {
   width: 100%;
   display: flex;
@@ -199,7 +211,7 @@ h1 {
 }
 
 #filters-wrap ul {
-padding:10% 0;
+padding:1% 0;
   margin: auto;
   display: block;
   
@@ -218,10 +230,24 @@ padding:10% 0;
  width:44%;
  margin:0 2% 5% 2%;
  
- 
- 
 }
 
+ #heading h3, p {
+   text-align: left;
+   padding-inline-start: 6%;
+   width: 50%;
+   font-family: 'Doppio One',
+   sans-serif;
+ }
+ #heading h3{
+   color: #fff;
+   font-size: 1.7rem;
+   margin-bottom: 2%;
+ }
+  #heading p{
+    color: #FAAB68;
+    margin-top: 2%;
+  }
 /* ---------- logo styling ---------- */
 
 

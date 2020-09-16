@@ -12,9 +12,19 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Doppio+One&display=swap" rel="stylesheet">
 </head>
 
 <body onhashchange="pageChange()">
+
+  <!--Welcome Page-->
+  <section id="welcome">
+    <div id="welcome-page">
+      <img src="img/welcome-logo.png">
+    </div>
+
+  </section>
+  
   <!-- tabbar navigation -->
   <nav id="tabbar" class="tabbar hide">
     <a href="#saved">Saved</a>
@@ -23,12 +33,7 @@
 
   <!-- pages -->
 
-  <!--Welcome Page-->
-  <section id="welcome">
-    <div id="welcome-page">
-    </div>
 
-  </section>
 
   <!-- Login page -->
   <section id="login" class="page">
@@ -120,7 +125,7 @@
   <section id="saved" class="page">
     <header class="topbar">
       <img src="./img/logo.png" alt="mideo-logo" class="mideo-logo">
-      <a class="left" href="#home" onclick="">Home</a>
+      <a class="left" href="#home" onclick=""><img src="./img/arrow.png" alt="back_arrow"</a>
     </header>
 
 
@@ -144,8 +149,13 @@
       <!--Back to home button-->
       <a class="left" href="#home" onclick="">Home</a>
     </header>
+    <div id="heading">
+      <h3>Filters</h3>
+      <p>Select your category</p>
+    </div>
 
     <div id="filters-wrap">
+     
       <ul>
         <li><img src="./img/btn/boomer.png" alt="boomer_btn"></li>
         <li><img src="./img/btn/clumsy.png" alt="clumsy_btn"></li>
