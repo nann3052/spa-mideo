@@ -113,6 +113,12 @@ h1 {
 
 }
 
+/*-------- Login ------*/
+#login {
+background: rgb(49,135,93);
+background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45%, rgba(117,40,158,1) 100%);
+}
+
 /* ---------- loading button ---------- */
 
 
@@ -135,7 +141,7 @@ h1 {
 .swiper-slide img {
   width: 100%;
    box-shadow: 10px 5px rgba(51, 51, 51, 0.445);
-   border-radius: 15mm;
+   border-radius: 5mm;
 }
 
 .swiper-slide-active {
