@@ -325,11 +325,14 @@ input {
   width: 100%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  border-radius:0px 50px;
+
 }
 
 .firebaseui-container {
   font-family: var(--font-family);
   font: 16px var(--font-family);
+    border-radius:0px 50px;
 }
 
 .firebaseui-title {
