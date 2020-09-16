@@ -119,6 +119,20 @@ background: rgb(49,135,93);
 background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45%, rgba(117,40,158,1) 100%);
 }
 
+.firebaseui-container{
+  background-color:rgba(255, 255, 255, 0.644);
+  mix-blend-mode: lighten;
+}
+
+.firebaseui-title {
+  color:#ff684f;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.mdl-textfield--floating-label .mdl-textfield__label {
+  color:#ff684f;
+}
+
 /* ---------- loading button ---------- */
 
 
