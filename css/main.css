@@ -352,6 +352,7 @@ input {
   font: 16px var(--font-family);
   border-radius:0px 50px;
   font-family: 'Quicksand', sans-serif;
+  mix-blend-mode: color-dodge;
 
 }
 
