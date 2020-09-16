@@ -1,7 +1,7 @@
 /* ---------- root variables ---------- */
 :root {
   --green: #3D5386;
-  --light-green: rgb(172, 198, 201);
+  --light-green: #ff684f;
   --light-grey: #f1f1f4;
   --text-color-light: #f1f1f1;
   --text-color-dark: #333;
@@ -26,11 +26,6 @@ h1 {
   font-size: 2em;
   font-weight: 300;
   letter-spacing: 3px;
-}
-
-/* ---------- logo ---------- */
-.mideo-logo {
-  width: 120px;
 }
 
 /* ---------- topbar styling ---------- */
@@ -124,6 +119,18 @@ background: rgb(49,135,93);
 background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45%, rgba(117,40,158,1) 100%);
 }
 
+.firebaseui-title {
+  color:#ff684f;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.mdl-textfield--floating-label .mdl-textfield__label {
+  color:#ff684f;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
 /* ---------- loading button ---------- */
 
 
@@ -145,8 +152,8 @@ background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45
 
 .swiper-slide img {
   width: 100%;
-  
-   
+   box-shadow: 10px 5px rgba(51, 51, 51, 0.445);
+   border-radius: 5mm;
 }
 
 .swiper-slide-active {
@@ -182,7 +189,6 @@ background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45
 
 /* --------- Home page -------------*/
 #video {
-  padding-top: 20px;
   width: 100%;
 }
 
@@ -263,7 +269,7 @@ form button {
   font-size: 1em;
   border-radius: 0;
   color: var(--text-color-light);
-  background-color: var(--green);
+  background-color: var(#ff684f);
   width: 100%;
   max-width: 350px;
 }
@@ -347,7 +353,9 @@ input {
 .firebaseui-container {
   font-family: var(--font-family);
   font: 16px var(--font-family);
-    border-radius:0px 50px;
+  border-radius:0px 50px;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
 .firebaseui-title {
@@ -357,12 +365,16 @@ input {
   letter-spacing: 2px;
 }
 
-.mdl-button--raised.mdl-button--colored,
+.mdl-button--raised.mdl-button--colored{
+  background-color:#ff684f ;
+    font-family: 'Quicksand', sans-serif;
+}
 .mdl-button--raised.mdl-button--colored:active,
 .mdl-button--raised.mdl-button--colored:hover {
-  background: var(--green);
+  background-color:#3D5386;
   color: #fff;
   border-radius: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .firebaseui-textfield.mdl-textfield .firebaseui-label::after {
