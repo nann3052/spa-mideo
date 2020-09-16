@@ -28,6 +28,11 @@ h1 {
   letter-spacing: 3px;
 }
 
+/* ---------- logo ---------- */
+.mideo-logo {
+  width: 120px;
+}
+
 /* ---------- topbar styling ---------- */
 .topbar {
   background-color: var(--green);
@@ -178,6 +183,7 @@ background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45
 
 /* --------- Home page -------------*/
 #video {
+  padding-top: 20px;
   width: 100%;
 }
 
