@@ -59,24 +59,12 @@ function logout() {
 }
 
 
-// ========== Spin the Wheel function ======= //
 
 
 // ========== Filters page ========== //
 
 
 
-
-// ========== Prieview image function ========== //
-function previewImage(file, previewId) {
-  if (file) {
-    let reader = new FileReader();
-    reader.onload = function (event) {
-      document.querySelector('#' + previewId).setAttribute('src', event.target.result);
-    };
-    reader.readAsDataURL(file);
-  }
-}
 
 // ========== MOVIE FUNCTIONALITY ========== //
 
