@@ -63,7 +63,7 @@ function logout() {
 
 // ========== Welcome page ========== //
 
-var myVar;
+/*var myVar;
 
 function myFunction() {
   myVar = setTimeout(showPage, 3000);
@@ -72,7 +72,7 @@ function myFunction() {
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
-}
+}*/
 
 
 // ========== MOVIE FUNCTIONALITY ========== //
