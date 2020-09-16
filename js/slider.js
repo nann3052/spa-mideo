@@ -1,7 +1,7 @@
 // frontpages icons slider
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 2,
-  spaceBetween: 30,
+  slidesPerView: 2.5,
+  spaceBetween: 15,
   centeredSlides: true,
   grabCursor: true,
   loop: true,

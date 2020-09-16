@@ -2,9 +2,9 @@
 :root {
   --green: #3D5386;
   --light-green: #ff684f;
-  --light-grey: #fff;
+  --light-grey: #201E2E;
   --text-color-light: #fff;
-  --text-color-dark: #333;
+  --text-color-dark:  #fff;
   --font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -125,6 +125,7 @@ h1 {
 /* slider for the filters*/
 .swiper-container {
   height: 100%;
+  align-items: center;
 }
 
 .swiper-wrapper {
@@ -134,7 +135,7 @@ h1 {
 
 
 .swiper-slide img {
-  width: 90%;
+  width: 100%;
 }
 
 .swiper-slide-active {
@@ -192,6 +193,8 @@ h1 {
 
 
 /* ------ Filters / Category -----*/
+
+
 #filters-wrap {
   width: 100%;
   display: flex;
@@ -201,7 +204,7 @@ h1 {
 }
 
 #filters-wrap ul {
-padding:10% 0;
+padding:1% 0;
   margin: auto;
   display: block;
   
@@ -220,10 +223,19 @@ padding:10% 0;
  width:44%;
  margin:0 2% 5% 2%;
  
- 
- 
 }
 
+ #heading h3, p {
+   text-align: left;
+   padding-inline-start: 6%;
+   width: 50%;
+ }
+ #heading h3{
+   color: #fff;
+ }
+  #heading p{
+    color: #FAAB68;
+  }
 /* ---------- logo styling ---------- */
 
 
