@@ -112,6 +112,7 @@ h1 {
   width: 100%;
 
 }
+
 /* ---------- loading button ---------- */
 
 
@@ -120,24 +121,26 @@ h1 {
   height: 100%;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   align-items: center;
   margin: 20px;
 }
 
-.swiper-slide{
+.swiper-slide {
   width: 160px;
   height: 100px;
 
 }
 
-.swiper-slide img{
+.swiper-slide img {
   width: 100%;
+   box-shadow: 10px 5px rgba(51, 51, 51, 0.445);
+   border-radius: 15mm;
 }
 
 .swiper-slide-active {
-transform: scale(1.2);
-transition: .4s;
+  transform: scale(1.2);
+  transition: .4s;
 }
 
 
@@ -147,19 +150,19 @@ transition: .4s;
   0% {
     transform: rotate(0deg);
   }
-  
+
   25% {
     transform: rotate(180deg);
   }
-  
+
   50% {
     transform: rotate(180deg);
   }
-  
+
   75% {
     transform: rotate(360deg);
   }
-  
+
   100% {
     transform: rotate(360deg);
   }
@@ -175,25 +178,31 @@ transition: .4s;
 
 /* ------ Filters / Category -----*/
 #filters-wrap {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin:0;
+  margin: 0;
 }
+
 #filters-wrap ul {
   width: 100%;
   margin: 0;
-padding: 0;
+  padding: 0;
 
 }
+
 #filters-wrap li {
-  width:30%;
-  background-color:red;
   list-style: none;
   padding: 0 5 0 5;
-  margin:0;
+  margin: 0;
   display: inline;
+ 
+}
+
+#filters-wrap img {
+ box-shadow: 10px 10px 5px rgba(51, 51, 51, 0.445);
+ border-radius: 15mm;
 }
 
 /* ---------- logo styling ---------- */
