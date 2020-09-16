@@ -129,14 +129,9 @@ h1 {
   margin: 20px;
 }
 
-.swiper-slide {
-  width: 160px;
-  height: 100px;
-
-}
 
 .swiper-slide img {
-  width: 100%;
+  width: 90%;
 }
 
 .swiper-slide-active {
@@ -144,7 +139,22 @@ h1 {
   transition: .4s;
 }
 
+/* ---------- randomzie button ---------- */
 
+.button {
+  background-color: #3D5386;
+  border: none;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 50px;
+  border-radius: 19px;
+}
 
 
 @keyframes loader {
