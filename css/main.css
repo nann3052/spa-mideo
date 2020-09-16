@@ -169,6 +169,11 @@ a.left img {
   margin: 25px;
   }
 
+  .play-container {
+    background-color: #3D5386;
+    margin-bottom: 20px;
+  }
+
 
 
 @keyframes loader {

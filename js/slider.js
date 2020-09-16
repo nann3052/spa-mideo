@@ -22,3 +22,5 @@ function playPause() {
     myVideo.pause(); 
 
 } 
+
+ 
