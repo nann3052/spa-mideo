@@ -113,21 +113,7 @@ h1 {
 
 }
 
-/*-------- Login ------*/
-#login {
-background: rgb(49,135,93);
-background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45%, rgba(117,40,158,1) 100%);
-}
 
-.firebaseui-title {
-  color:#ff684f;
-  font-family: 'Quicksand', sans-serif;
-}
-
-.mdl-textfield--floating-label .mdl-textfield__label {
-  color:#ff684f;
-    font-family: 'Quicksand', sans-serif;
-}
 
 
 
@@ -337,6 +323,24 @@ input {
 }
 
 /* ---------- authentication styling ---------- */
+
+/*-------- Login ------*/
+#login {
+background: rgb(49,135,93);
+background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45%, rgba(117,40,158,1) 100%);
+}
+
+.firebaseui-title {
+  color:#ff684f;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.mdl-textfield--floating-label .mdl-textfield__label {
+  color:#ff684f;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*---------- sign up-------*/
 #firebaseui-auth-container {
   position: absolute;
   top: 50%;
@@ -353,6 +357,7 @@ input {
   border-radius:0px 50px;
   font-family: 'Quicksand', sans-serif;
   mix-blend-mode: color-dodge;
+  background-color:rgb(255, 255, 255);
 
 }
 
@@ -366,15 +371,18 @@ input {
 .mdl-button--raised.mdl-button--colored{
   background-color:#ff684f ;
     font-family: 'Quicksand', sans-serif;
+    border-radius:0px 10px;
 }
 .mdl-button--raised.mdl-button--colored:active,
 .mdl-button--raised.mdl-button--colored:hover {
   background-color:#3D5386;
-  color: #fff;
+  color:#fff;
   border-radius: 0;
     font-family: 'Quicksand', sans-serif;
+    border-radius:0px 10px;
 }
 
 .firebaseui-textfield.mdl-textfield .firebaseui-label::after {
   background-color: var(--green);
+  color:#ff684f;
 }
