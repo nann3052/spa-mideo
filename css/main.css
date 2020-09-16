@@ -189,6 +189,8 @@ h1 {
 
 
 /* ------ Filters / Category -----*/
+
+
 #filters-wrap {
   width: 100%;
   display: flex;
@@ -198,7 +200,7 @@ h1 {
 }
 
 #filters-wrap ul {
-padding:10% 0;
+padding:1% 0;
   margin: auto;
   display: block;
   
@@ -217,10 +219,19 @@ padding:10% 0;
  width:44%;
  margin:0 2% 5% 2%;
  
- 
- 
 }
 
+ #heading h3, p {
+   text-align: left;
+   padding-inline-start: 6%;
+   width: 50%;
+ }
+ #heading h3{
+   color: #fff;
+ }
+  #heading p{
+    color: #FAAB68;
+  }
 /* ---------- logo styling ---------- */
 
 
