@@ -203,8 +203,8 @@ background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45
 
 #filters-wrap ul {
   width: 100%;
-  margin: auto auto;
-  padding: 0;
+  margin: auto;
+  padding-top: 10%;
   
 
 }
@@ -213,14 +213,16 @@ background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45
   list-style: none;
   margin-left: 7%;
   display: inline;
-  padding-bottom: 10% ;
- padding-top:0;
+  padding-bottom: 10%;
+  padding-top: 40%;
 }
 
-#filters-wrap img {
+#filters-wrap li img {
  box-shadow: 10px 10px 5px rgba(51, 51, 51, 0.445);
  border-radius: 25px;
  width: 39%;
+ margin-bottom: 5%;
+ 
  
 }
 
