@@ -108,9 +108,8 @@ h1 {
 
 
 /* ------- Welcome Page ------*/
-#mideo-logo {
-  width: 100%;
-
+.mideo-logo {
+  width: 120px;
 }
 
 /*-------- Login ------*/
@@ -188,6 +187,7 @@ background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45
 /* --------- Home page -------------*/
 #video {
   width: 100%;
+  margin-top: 20px;
 }
 
 
@@ -222,11 +222,7 @@ background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45
 }
 
 /* ---------- logo styling ---------- */
-.logo {
-  margin: 2em auto;
-  width: 100%;
-  max-width: 300px;
-}
+
 
 /* ---------- animations ---------- */
 /* fade in */
