@@ -115,10 +115,7 @@ a.left img {
 
 
 /* ------- Welcome Page ------*/
-#welcome {
-  background-color:
- 
-}
+
 
 
 #welcome-page img {
@@ -168,6 +165,12 @@ a.left img {
 }
 
 
+.play-button {
+  margin: 25px;
+  }
+
+
+
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -196,6 +199,12 @@ a.left img {
   width: 100%;
   margin-top: 20px;
 }
+
+.mideo-logo {
+  width: 120px;
+}
+
+
 
 
 
