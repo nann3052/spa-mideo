@@ -2,8 +2,8 @@
 :root {
   --green: #3D5386;
   --light-green: #ff684f;
-  --light-grey: #f1f1f4;
-  --text-color-light: #f1f1f1;
+  --light-grey: #fff;
+  --text-color-light: #fff;
   --text-color-dark: #333;
   --font-family: Helvetica, Arial, sans-serif;
 }
@@ -180,7 +180,7 @@ h1 {
 
 /* ------ Filters / Category -----*/
 #filters-wrap {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -188,26 +188,25 @@ h1 {
 }
 
 #filters-wrap ul {
-  width: 100%;
+padding:10% 0;
   margin: auto;
-  padding-top: 10%;
+  display: block;
   
 
 }
 
 #filters-wrap li {
   list-style: none;
-  margin-left: 7%;
   display: inline;
-  padding-bottom: 10%;
-  padding-top: 40%;
+  padding-top: 10%;
 }
 
 #filters-wrap li img {
- box-shadow: 10px 10px 5px rgba(51, 51, 51, 0.445);
+ box-shadow: 5px 5px 5px rgba(51, 51, 51, 0.445);
  border-radius: 25px;
- width: 39%;
- margin-bottom: 5%;
+ width:44%;
+ margin:0 2% 5% 2%;
+ 
  
  
 }
