@@ -108,10 +108,13 @@ h1 {
 
 
 /* ------- Welcome Page ------*/
-.mideo-logo {
-  width: 120px;
+#welcome {
+  background-color:;
+ 
 }
-
+#welcome-page img {
+  width: 100%;
+}
 
 
 
