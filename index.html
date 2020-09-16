@@ -15,11 +15,7 @@
 </head>
 
 <body onhashchange="pageChange()">
-  <!-- tabbar navigation -->
-  <nav id="tabbar" class="tabbar hide">
-    <a href="#saved">Saved</a>
-    <a href="#filters">Filters</a>
-  </nav>
+
 
   <!-- pages -->
 
@@ -42,9 +38,14 @@
   <section id="home" class="page">
     <header class="topbar">
       <img src="./img/logo.png" alt="mideo-logo" class="mideo-logo">
-    
+
       <a class="right" href="#" onclick="logout()">Logout</a>
     </header>
+    <!-- tabbar navigation -->
+    <nav id="tabbar" class="tabbar hide">
+      <a href="#saved">Saved</a>
+      <a href="#filters">Filters</a>
+    </nav>
     <div id="video-container" class="grid-container">
       <video id="video" controls>
         <source src="movie.mp4" type="video/mp4">
@@ -149,7 +150,7 @@
         <li><img src="./img/btn/clumsy.png" alt="clumsy_btn"></li>
         <li><img src="./img/btn/dying.png" alt="dying_btn"></li>
         <li><img src="./img/btn/cringe.png" alt="cringe_btn"></li>
-          <li><img src="./img/btn/prank.png" alt="prank_btn"></li>
+        <li><img src="./img/btn/prank.png" alt="prank_btn"></li>
         <li><img src="./img/btn/ffs.png" alt="ffs_btn"></li>
         <li><img src="./img/btn/farmfun.png" alt="farmfun_btn"></li>
         <li><img src="./img/btn/memes.png" alt="memes_btn"></li>
