@@ -10,3 +10,15 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
+
+//video play, pause, skip, further buttons
+
+var myVideo = document.getElementById("video"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+
+} 
