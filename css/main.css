@@ -61,6 +61,13 @@ h1 {
   right: 20px;
 }
 
+a.left img {
+  width: 15%;
+   position: absolute;
+   top: 8px;
+   left: 16px;
+}
+
 /* ---------- tabbar styling ---------- */
 .tabbar {
   background-color: var(--green);
@@ -226,12 +233,17 @@ padding:1% 0;
    text-align: left;
    padding-inline-start: 6%;
    width: 50%;
+   font-family: 'Doppio One',
+   sans-serif;
  }
  #heading h3{
    color: #fff;
+   font-size: 1.7rem;
+   margin-bottom: 2%;
  }
   #heading p{
     color: #FAAB68;
+    margin-top: 2%;
   }
 /* ---------- logo styling ---------- */
 
