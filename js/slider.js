@@ -1,6 +1,7 @@
+// frontpages icons slider
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 2,
-  spaceBetween: 20,
+  spaceBetween: 30,
   centeredSlides: true,
   grabCursor: true,
   loop: true,
@@ -8,5 +9,4 @@ var swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
   },
-
 });
