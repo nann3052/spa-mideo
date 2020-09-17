@@ -20,7 +20,9 @@ function playPause() {
     myVideo.play(); 
   else 
     myVideo.pause(); 
-
 } 
 
- 
+
+$(".play-button").click(function(){
+  $(this).toggleClass("pause")  ; 
+ })
