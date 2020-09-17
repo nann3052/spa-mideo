@@ -50,15 +50,18 @@
       <a class="right" href="#" onclick="logout()">Logout</a>
     </header>
 
+    <!-- video home page -->
+
     <div id="video-container" class="grid-container">
-      <video id="video" controls>
+      <video id="video">
         <source src="video/sangfugl.MOV" type="video/mp4">
       </video>
     </div>
+    <div class="play-container">
+      <button onclick="playPause()" class="play-button">Play/Pause</button>
+    </div>
 
-    <div class="">
-    <button onclick="playPause()" class="play-button">Play/Pause</button> 
-  </div>
+
     <!-- Swiper -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
@@ -125,17 +128,14 @@
   <section id="saved" class="page">
     <header class="topbar">
       <img src="./img/logo.png" alt="mideo-logo" class="mideo-logo">
-      <a class="left" href="#home" onclick=""><img src="./img/arrow.png" alt="back_arrow" </a>
+      <a class="left" href="#home" onclick=""><img src="./img/arrow.png" alt="back_arrow"></a>
     </header>
 
 
     <div id="saved-vid-container">
-      <h3>Saved</h3>
-      <div id="saved-wrapper">
-        <ul>
-          <li></li>
-        </ul>
-      </div>
+      <h3>Saved videos</h3>
+      <p>Video collection</p>
+      <div id="saved-wrapper"></div>
     </div>
 
   </section>
@@ -145,9 +145,9 @@
 
     <header class="topbar">
       <img src="./img/logo.png" alt="mideo-logo" class="mideo-logo">
-
       <!--Back to home button-->
       <a class="left" href="#home" onclick="">Home</a>
+
     </header>
     <div id="heading">
       <h3>Filters</h3>
@@ -155,7 +155,6 @@
     </div>
 
     <div id="filters-wrap">
-
       <ul>
         <li><img src="./img/btn/boomer.png" alt="boomer_btn"></li>
         <li><img src="./img/btn/clumsy.png" alt="clumsy_btn"></li>

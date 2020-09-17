@@ -91,7 +91,7 @@ function init() {
       appendUserData();
       appendFavMovies(_currentUser.favMovies);
       if (_movies) {
-        appendMovies(_movies); // refresh movies when user data changes
+        appendVideos(_movies); // refresh movies when user data changes
       }
       showLoader(false);
     }
@@ -105,24 +105,22 @@ function init() {
       movie.id = doc.id;
       _movies.push(movie);
     });
-    appendMovies(_movies);
+    appendVideos(_movies);
   });
 }
 
-// append movies to the DOM
-function appendMovies(movies) {
+// append videos to the DOM
+function appendVideos(movies) {
   let htmlTemplate = "";
   for (let movie of movies) {
     htmlTemplate += `
       <article>
-        <h2>${movie.title} (${movie.year})</h2>
-        <img src="${movie.img}">
-        <p>${movie.description}</p>
+        <img src="./img/logo.png">
         ${generateFavMovieButton(movie.id)}
       </article>
     `;
   }
-  document.querySelector('#movie-container').innerHTML = htmlTemplate;
+  document.querySelector('#saved-vid-container').innerHTML = htmlTemplate;
 }
 
 function generateFavMovieButton(movieId) {
@@ -147,9 +145,7 @@ async function appendFavMovies(favMovieIds = []) {
         movie.id = doc.id;
         htmlTemplate += `
         <article>
-          <h2>${movie.title} (${movie.year})</h2>
           <img src="${movie.img}">
-          <p>${movie.description}</p>
           <button onclick="removeFromFavourites('${movie.id}')" class="rm">Remove from favourites</button>
         </article>
       `;

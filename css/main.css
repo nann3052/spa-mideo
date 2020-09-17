@@ -176,6 +176,11 @@ width: 49%;
   margin: 25px;
   }
 
+  .play-container {
+    background-color: #3D5386;
+    margin-bottom: 20px;
+  }
+
 
 
 @keyframes loader {
@@ -208,7 +213,7 @@ width: 49%;
 }
 
 .mideo-logo {
-  width: 120px;
+  width: 130px;
 }
 
 
@@ -264,6 +269,31 @@ padding:1% 0;
     color: #FAAB68;
     margin-top: 2%;
   }
+
+
+/*------------ Saved page -----------*/
+#saved-vid-container {
+  width: 100%;
+  
+}
+#saved-vid-container h3 {
+margin: 10% 5% 0 5%;
+text-align: left;
+font-family: 'Doppio One';
+ font-size: 1.7rem;
+}
+
+#saved-vid-container p {
+  margin: 2% 0 0 0;
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+
+
+
+
 /* ---------- logo styling ---------- */
 
 
