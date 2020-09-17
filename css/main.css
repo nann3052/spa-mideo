@@ -324,18 +324,13 @@ padding:1% 0;
     margin-top: 2%;
   }
 
+  .heading {
+    margin-top: 10%;
+  }
+
 
 /*------------ Saved page -----------*/
-#saved-vid-container {
-  width: 100%;
-  
-}
-#saved-vid-container h3 {
-margin: 10% 5% 0 5%;
-text-align: left;
-font-family: 'Doppio One';
- font-size: 1.7rem;
-}
+ 
 
 #saved-vid-container p {
   margin: 2% 0 0 0;
