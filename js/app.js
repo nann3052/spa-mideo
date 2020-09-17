@@ -109,7 +109,7 @@ function init() {
   });
 }
 
-// append movies to the DOM
+// append videos to the DOM
 function appendMovies(movies) {
   let htmlTemplate = "";
   for (let movie of movies) {
