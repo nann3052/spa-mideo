@@ -333,6 +333,23 @@ font-family: 'Doppio One';
   font-family: 'Quicksand', sans-serif;
 
 }
+#saved-library {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+}
+
+#saved-library li {
+  width: 40%;
+  margin: 2% 2%;
+  list-style: none;
+}
+
+#saved-library video {
+  
+}
 
 
 
