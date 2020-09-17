@@ -134,7 +134,7 @@ async function appendFavVideos(favVideoIds = []) {
         htmlTemplate += `
         <article>
           <img src="">
-          <button onclick="removeFromFavourites('${.id}')" class="rm">Remove from favourites</button>
+          <button onclick="removeFromFavourites('${movie.id}')" class="rm">Remove from favourites</button>
         </article>
       `;
       });

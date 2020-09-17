@@ -9,6 +9,10 @@
   --font-family: Helvetica, Arial, sans-serif;
 }
 
+*:focus {
+  outline: 0 !important;
+}
+
 /* ---------- general styling ---------- */
 html {
   color: var(--text-color-dark);
@@ -90,11 +94,6 @@ a.left img {
 }
 
 /* Style the links inside the navigation bar */
-nav#tabbar.tabbar{
-  height: #ff684f;
-
-}
-
 
 .tabbar a {
   display: inline-table;
@@ -165,9 +164,9 @@ width: 50%;
   transition: .4s;
 }
 
-/* ---------- randomzie button ---------- */
+/* ---------- randomize button ---------- */
 
-.button {
+.random_button {
   background-color: #3D5386;
   border: none;
   color: white;
@@ -180,11 +179,10 @@ width: 50%;
   cursor: pointer;
   margin-top: 20px;
   border-radius: 19px;
+  font-family: 'Doppio';
 }
 
-.button:active {
-  outline: none;
-}
+
 
 
 .play-button {
@@ -198,9 +196,7 @@ width: 50%;
   margin: 5px;
 }
 
-.play-button, .play-button.pause:active {
-outline: none;
-}
+
 
 
 .play-button.pause {
@@ -293,23 +289,25 @@ padding:1% 0;
  
 }
 
-.heading {
-  padding-top: 3%;
-}
-
- .heading h3, p {
+ .heading h3,
+ p,
+ #saved-vid-container h3, p {
    text-align: left;
    padding-inline-start: 6%;
    width: 50%;
    font-family: 'Doppio One',
    sans-serif;
  }
- .heading h3{
+
+ .heading h3,
+ #saved-vid-container h3 {
    color: #fff;
    font-size: 1.7rem;
    margin-bottom: 2%;
  }
-  .heading p{
+
+  .heading p,
+  #saved-vid-container p {
     color: #FAAB68;
     margin-top: 2%;
   }
@@ -330,7 +328,6 @@ font-family: 'Doppio One';
 #saved-vid-container p {
   margin: 2% 0 0 0;
   text-align: left;
-  font-family: 'Quicksand', sans-serif;
 
 }
 #saved-library {
