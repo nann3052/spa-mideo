@@ -293,19 +293,23 @@ padding:1% 0;
  
 }
 
- #heading h3, p {
+.heading {
+  padding-top: 3%;
+}
+
+ .heading h3, p {
    text-align: left;
    padding-inline-start: 6%;
    width: 50%;
    font-family: 'Doppio One',
    sans-serif;
  }
- #heading h3{
+ .heading h3{
    color: #fff;
    font-size: 1.7rem;
    margin-bottom: 2%;
  }
-  #heading p{
+  .heading p{
     color: #FAAB68;
     margin-top: 2%;
   }
