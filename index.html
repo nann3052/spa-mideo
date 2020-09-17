@@ -13,6 +13,7 @@
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Doppio+One&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body onhashchange="pageChange()">
@@ -58,8 +59,8 @@
       </video>
     </div>
     <div class="play-container">
-      <button onclick="playPause()" class="play-button">Play/Pause</button>
-    </div>
+    <button onclick="playPause()" class="play-button"></button> 
+  </div>
 
 
     <!-- Swiper -->
@@ -127,8 +128,11 @@
   <!-- Saved page -->
   <section id="saved" class="page">
     <header class="topbar">
+      <a class="left" href="#home" onclick="">
+        <img src="img/arrow.png">
+      </a>
       <img src="./img/logo.png" alt="mideo-logo" class="mideo-logo">
-      <a class="left" href="#home" onclick=""><img src="./img/arrow.png" alt="back_arrow"></a>
+
     </header>
 
 
@@ -144,9 +148,12 @@
   <section id="filters" class="page">
 
     <header class="topbar">
+      <a class="left" href="#home" onclick="">
+        <img src="img/arrow.png">
+      </a>
       <img src="./img/logo.png" alt="mideo-logo" class="mideo-logo">
       <!--Back to home button-->
-      <a class="left" href="#home" onclick="">Home</a>
+
 
     </header>
     <div id="heading">

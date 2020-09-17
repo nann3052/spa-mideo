@@ -56,6 +56,14 @@ h1 {
 
 .topbar a.left {
   left: 20px;
+
+}
+.left{
+  width: 80%;
+}
+
+.left img {
+  width: 30%;
 }
 
 .topbar a.right {
@@ -177,8 +185,33 @@ width: 50%;
 
 
 .play-button {
-  margin: 25px;
-  }
+  background-image: url(../img/playknap.png);
+  width: 79px;
+  height: 79px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.play-button, .play-button.pause:active {
+outline: none;
+}
+
+
+.play-button.pause {
+  background-image: url(../img/pauseknap.png);
+  width: 79px;
+  height: 79px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
 
   .play-container {
     background-color: #3D5386;
