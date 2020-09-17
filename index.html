@@ -28,8 +28,8 @@
 
   <!-- tabbar navigation -->
   <nav id="tabbar" class="tabbar hide">
-    <a href="#saved">Saved</a>
-    <a href="#filters">Filters</a>
+    <a href="#saved"><img src="./img/saved.png" alt="saved_btn">Saved</a>
+    <a href="#filters"><img src="./img/filters.png" alt="filters_btn">Filters</a>
   </nav>
 
   <!-- pages -->
@@ -51,7 +51,7 @@
       <a class="right" href="#" onclick="logout()">Logout</a>
     </header>
 
-      <!-- video home page -->
+    <!-- video home page -->
 
     <div id="video-container" class="grid-container">
       <video id="video">
@@ -128,18 +128,18 @@
   <!-- Saved page -->
   <section id="saved" class="page">
     <header class="topbar">
+      <a class="left" href="#home" onclick="">
+        <img src="img/arrow.png">
+      </a>
       <img src="./img/logo.png" alt="mideo-logo" class="mideo-logo">
-      <a class="left" href="#home" onclick=""><img src="./img/arrow.png" alt="back_arrow"></a>
+
     </header>
 
 
     <div id="saved-vid-container">
-      <h3>Saved</h3>
-      <div id="saved-wrapper">
-        <ul>
-          <li></li>
-        </ul>
-      </div>
+      <h3>Saved videos</h3>
+      <p>Video collection</p>
+      <div id="saved-wrapper"></div>
     </div>
 
   </section>
@@ -148,9 +148,12 @@
   <section id="filters" class="page">
 
     <header class="topbar">
+      <a class="left" href="#home" onclick="">
+        <img src="img/arrow.png">
+      </a>
       <img src="./img/logo.png" alt="mideo-logo" class="mideo-logo">
       <!--Back to home button-->
-      <a class="left" href="#home" onclick="">Home</a>
+
 
     </header>
     <div id="heading">

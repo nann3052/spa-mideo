@@ -63,7 +63,7 @@ function logout() {
 
 // ========== Welcome page ========== //
 
-/*var myVar;
+/*let myVar;
 
 function myFunction() {
   myVar = setTimeout(showPage, 3000);
@@ -77,9 +77,9 @@ function showPage() {
 
 // ========== MOVIE FUNCTIONALITY ========== //
 
-// initialize movie references - all movies and user's favourite movies
+// initialize video references - all videos and user's favourite videos
 function init() {
-  // init user data and favourite movies
+  // init user data and favourite videos
   _userRef.doc(_currentUser.uid).onSnapshot({
     includeMetadataChanges: true
   }, function (userData) {
@@ -89,9 +89,9 @@ function init() {
         ...userData.data()
       }; //concating two objects: authUser object and userData objec from the db
       appendUserData();
-      appendFavMovies(_currentUser.favMovies);
+      appendFavVideos(_currentUser.favVideos);
       if (_movies) {
-        appendMovies(_movies); // refresh movies when user data changes
+        appendVideos(_movies); // refresh movies when user data changes
       }
       showLoader(false);
     }
@@ -105,52 +105,36 @@ function init() {
       movie.id = doc.id;
       _movies.push(movie);
     });
-    appendMovies(_movies);
+    appendVideos(_movies);
   });
 }
 
-// append movies to the DOM
-function appendMovies(movies) {
-  let htmlTemplate = "";
-  for (let movie of movies) {
-    htmlTemplate += `
-      <article>
-        <h2>${movie.title} (${movie.year})</h2>
-        <img src="${movie.img}">
-        <p>${movie.description}</p>
-        ${generateFavMovieButton(movie.id)}
-      </article>
-    `;
-  }
-  document.querySelector('#movie-container').innerHTML = htmlTemplate;
-}
 
-function generateFavMovieButton(movieId) {
+// generate the favorite button
+function generateFavVideosButton(videoId) {
   let btnTemplate = `
-    <button onclick="addToFavourites('${movieId}')">Add to favourites</button>`;
-  if (_currentUser.favMovies && _currentUser.favMovies.includes(movieId)) {
+    <button onclick="addToFavourites('${videoId}')">Add to favourites</button>`;
+  if (_currentUser.favVideos && _currentUser.favVideos.includes(videoId)) {
     btnTemplate = `
-      <button onclick="removeFromFavourites('${movieId}')" class="rm">Remove from favourites</button>`;
+      <button onclick="removeFromFavourites('${videoId}')" class="rm">Remove from favourites</button>`;
   }
   return btnTemplate;
 }
 
 // append favourite movies to the DOM
-async function appendFavMovies(favMovieIds = []) {
+async function appendFavVideos(favVideoIds = []) {
   let htmlTemplate = "";
-  if (favMovieIds.length === 0) {
-    htmlTemplate = "<p>Please, add movies to favourites.</p>";
+  if (favVideoIds.length === 0) {
+    htmlTemplate = "<p>Add videos to favourites.</p>";
   } else {
-    for (let movieId of favMovieIds) {
-      await _movieRef.doc(movieId).get().then(function (doc) {
-        let movie = doc.data();
-        movie.id = doc.id;
+    for (let videoId of favVideosIds) {
+      await _movieRef.doc(videoId).get().then(function (doc) {
+        let video = doc.data();
+        video.id = doc.id;
         htmlTemplate += `
         <article>
-          <h2>${movie.title} (${movie.year})</h2>
-          <img src="${movie.img}">
-          <p>${movie.description}</p>
-          <button onclick="removeFromFavourites('${movie.id}')" class="rm">Remove from favourites</button>
+          <img src="">
+          <button onclick="removeFromFavourites('${.id}')" class="rm">Remove from favourites</button>
         </article>
       `;
       });

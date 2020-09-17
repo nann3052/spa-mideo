@@ -1,6 +1,7 @@
 /* ---------- root variables ---------- */
 :root {
   --green: #3D5386;
+  --dark-blue: #201E2E;
   --light-green: #ff684f;
   --light-grey: #201E2E;
   --text-color-light: #fff;
@@ -55,6 +56,14 @@ h1 {
 
 .topbar a.left {
   left: 20px;
+
+}
+.left{
+  width: 80%;
+}
+
+.left img {
+  width: 30%;
 }
 
 .topbar a.right {
@@ -70,7 +79,7 @@ a.left img {
 
 /* ---------- tabbar styling ---------- */
 .tabbar {
-  background-color: var(--green);
+  background-color: var(--dark-blue);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -79,21 +88,27 @@ a.left img {
 }
 
 /* Style the links inside the navigation bar */
+nav#tabbar.tabbar{
+  height: %;
+}
+
+
 .tabbar a {
-  display: inline-block;
+  display: inline-table;
   color: var(--text-color-light);
   text-align: center;
-  padding: 20px 16px;
+  width: 25%;
+  height: 14%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-decoration: none;
   font-size: 0.8em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
-/* Change the color of links on hover */
-.tabbar a:hover {
-  background-color: var(--light-grey);
-  color: var(--text-color-dark);
+.tabbar a img {
+width: 49%;
 }
 
 /* Add a color to the active/current link */
@@ -287,6 +302,31 @@ padding:1% 0;
     color: #FAAB68;
     margin-top: 2%;
   }
+
+
+/*------------ Saved page -----------*/
+#saved-vid-container {
+  width: 100%;
+  
+}
+#saved-vid-container h3 {
+margin: 10% 5% 0 5%;
+text-align: left;
+font-family: 'Doppio One';
+ font-size: 1.7rem;
+}
+
+#saved-vid-container p {
+  margin: 2% 0 0 0;
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+
+
+
+
 /* ---------- logo styling ---------- */
 
 
