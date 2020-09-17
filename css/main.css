@@ -91,8 +91,8 @@ nav#tabbar.tabbar{
   text-align: center;
   width: 25%;
   height: 14%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
   text-decoration: none;
   font-size: 0.8em;
   letter-spacing: 0.1em;
@@ -100,7 +100,7 @@ nav#tabbar.tabbar{
 }
 
 .tabbar a img {
-width: 49%;
+width: 50%;
 }
 
 /* Add a color to the active/current link */
@@ -169,6 +169,10 @@ width: 49%;
   cursor: pointer;
   margin-top: 20px;
   border-radius: 19px;
+}
+
+.button:active {
+  outline: none;
 }
 
 
