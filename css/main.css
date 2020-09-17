@@ -33,7 +33,7 @@ h1 {
 .topbar {
   background-color: var(--green);
   color: var(--text-color-light);
-  padding: 13.5px;
+  padding: 14px;
   text-transform: uppercase;
   position: fixed;
   top: 0;
@@ -68,6 +68,8 @@ h1 {
 
 .topbar a.right {
   right: 20px;
+  color:#fff;
+     font-family: 'Doppio One';
 }
 
 a.left img {
@@ -89,7 +91,8 @@ a.left img {
 
 /* Style the links inside the navigation bar */
 nav#tabbar.tabbar{
-  height: %;
+  height: #ff684f;
+
 }
 
 
