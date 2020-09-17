@@ -37,7 +37,7 @@ h1 {
 .topbar {
   background-color: var(--green);
   color: var(--text-color-light);
-  padding: 13.5px;
+  padding: 14px;
   text-transform: uppercase;
   position: fixed;
   top: 0;
@@ -72,6 +72,8 @@ h1 {
 
 .topbar a.right {
   right: 20px;
+  color:#fff;
+     font-family: 'Doppio One';
 }
 
 a.left img {
@@ -287,7 +289,7 @@ padding:1% 0;
  
 }
 
- #heading h3,
+ .heading h3,
  p,
  #saved-vid-container h3, p {
    text-align: left;
@@ -297,14 +299,14 @@ padding:1% 0;
    sans-serif;
  }
 
- #heading h3,
+ .heading h3,
  #saved-vid-container h3 {
    color: #fff;
    font-size: 1.7rem;
    margin-bottom: 2%;
  }
 
-  #heading p,
+  .heading p,
   #saved-vid-container p {
     color: #FAAB68;
     margin-top: 2%;
