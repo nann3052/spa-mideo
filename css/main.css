@@ -9,6 +9,10 @@
   --font-family: Helvetica, Arial, sans-serif;
 }
 
+*:focus {
+  outline: 0 !important;
+}
+
 /* ---------- general styling ---------- */
 html {
   color: var(--text-color-dark);
@@ -33,7 +37,7 @@ h1 {
 .topbar {
   background-color: var(--green);
   color: var(--text-color-light);
-  padding: 13.5px;
+  padding: 14px;
   text-transform: uppercase;
   position: fixed;
   top: 0;
@@ -68,6 +72,8 @@ h1 {
 
 .topbar a.right {
   right: 20px;
+  color:#fff;
+     font-family: 'Doppio One';
 }
 
 a.left img {
@@ -88,10 +94,6 @@ a.left img {
 }
 
 /* Style the links inside the navigation bar */
-nav#tabbar.tabbar{
-  height: %;
-}
-
 
 .tabbar a {
   display: inline-table;
@@ -99,8 +101,8 @@ nav#tabbar.tabbar{
   text-align: center;
   width: 25%;
   height: 14%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
   text-decoration: none;
   font-size: 0.8em;
   letter-spacing: 0.1em;
@@ -108,7 +110,7 @@ nav#tabbar.tabbar{
 }
 
 .tabbar a img {
-width: 49%;
+width: 50%;
 }
 
 /* Add a color to the active/current link */
@@ -162,9 +164,9 @@ width: 49%;
   transition: .4s;
 }
 
-/* ---------- randomzie button ---------- */
+/* ---------- randomize button ---------- */
 
-.button {
+.random_button {
   background-color: #3D5386;
   border: none;
   color: white;
@@ -177,7 +179,10 @@ width: 49%;
   cursor: pointer;
   margin-top: 20px;
   border-radius: 19px;
+  font-family: 'Doppio';
 }
+
+
 
 
 .play-button {
@@ -191,9 +196,7 @@ width: 49%;
   margin: 5px;
 }
 
-.play-button, .play-button.pause:active {
-outline: none;
-}
+
 
 
 .play-button.pause {
@@ -286,19 +289,25 @@ padding:1% 0;
  
 }
 
- #heading h3, p {
+ .heading h3,
+ p,
+ #saved-vid-container h3, p {
    text-align: left;
    padding-inline-start: 6%;
    width: 50%;
    font-family: 'Doppio One',
    sans-serif;
  }
- #heading h3{
+
+ .heading h3,
+ #saved-vid-container h3 {
    color: #fff;
    font-size: 1.7rem;
    margin-bottom: 2%;
  }
-  #heading p{
+
+  .heading p,
+  #saved-vid-container p {
     color: #FAAB68;
     margin-top: 2%;
   }
@@ -309,7 +318,7 @@ padding:1% 0;
   width: 100%;
   
 }
-#saved-vid-container h3 {
+/*#saved-vid-container h3 {
 margin: 10% 5% 0 5%;
 text-align: left;
 font-family: 'Doppio One';
@@ -319,9 +328,8 @@ font-family: 'Doppio One';
 #saved-vid-container p {
   margin: 2% 0 0 0;
   text-align: left;
-  font-family: 'Quicksand', sans-serif;
 
-}
+}*/
 
 
 
