@@ -122,7 +122,7 @@ function appendMovies(movies) {
       </article>
     `;
   }
-  document.querySelector('#movie-container').innerHTML = htmlTemplate;
+  document.querySelector('#saved-wrapper').innerHTML = htmlTemplate;
 }
 
 function generateFavMovieButton(movieId) {
