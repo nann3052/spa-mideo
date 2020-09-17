@@ -91,15 +91,19 @@ a.left img {
   left: 0;
   right: 0;
   z-index: 9999;
+  display: flex;
 }
 
 /* Style the links inside the navigation bar */
 
 .tabbar a {
-  display: inline-table;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: var(--text-color-light);
   text-align: center;
-  width: 25%;
+  width: 50%;
   height: 14%;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
@@ -110,7 +114,15 @@ a.left img {
 }
 
 .tabbar a img {
-width: 50%;
+width: 50px;
+height: 50px;
+}
+
+#tabbar_saved {
+align-content: left;
+}
+#tabbar_filters{
+
 }
 
 /* Add a color to the active/current link */
@@ -179,7 +191,7 @@ width: 50%;
   cursor: pointer;
   margin-top: 20px;
   border-radius: 19px;
-  font-family: 'Doppio';
+  font-family: 'Doppio One';
 }
 
 
@@ -344,9 +356,7 @@ justify-content: center;
   list-style: none;
 }
 
-#saved-library video {
-  
-}
+
 
 
 
