@@ -44,6 +44,7 @@ h1 {
   left: 0;
   right: 0;
   z-index: 9999;
+  height: 46px;
 }
 
 .topbar h2 {
@@ -218,6 +219,28 @@ height: 50px;
   }
 }
 
+/*---------- Heart button ---------*/
+.likeheart {
+  width: 100%;
+}
+
+.heart {
+  width: 100px;
+height: 100px;
+  position: absolute;
+  left: 10%;
+top:17%;
+  transform: translate(-50%, -50%);
+  background: url('https://cssanimation.rocks/images/posts/steps/heart.png') no-repeat;
+  z-index:9999;  
+
+  
+}
+.heart-blast {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+
 
 
 /* ---------- play/pause button ---------- */
@@ -296,13 +319,11 @@ height: 50px;
   background-color: rgba(255, 255, 255, 0.37);
   border-radius:50%;
   color:#fff;
-  width: 50px;
-  height: 50px;
- 
-  font-size: 16px;
+  width: 35px;
+  height: 35px;
   border: none;
-  z-index: 9999;
-  font-size: 2em;
+  z-index: 2;
+  font-size: 1.5em;
   text-align: center;
 }
 

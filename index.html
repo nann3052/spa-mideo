@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Doppio+One&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 
 <body onhashchange="pageChange()">
@@ -53,6 +54,10 @@
 
     <!-- video home page -->
 
+    <div class="likeheart">
+      <div class="heart"></div>
+    </div>
+
     <div class="dropdown">
       <button class="dropbtn">&#9741;</button>
       <div class="dropdown-content">
@@ -62,13 +67,11 @@
       </div>
     </div>
 
-    <div id="video-container" class="grid-container">
+    <div id="video-container" class="grid-container"></div>
 
-
-
-      <video id="video">
-        <source src="video/sangfugl.MOV" type="video/mp4">
-      </video>
+    <video id="video">
+      <source src="video/sangfugl.MOV" type="video/mp4">
+    </video>
     </div>
     <div class="play-container">
       <button onclick="playPause()" class="play-button"></button>
