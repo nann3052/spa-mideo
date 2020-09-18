@@ -77,25 +77,7 @@ function showPage() {
 
 // ========== MOVIE FUNCTIONALITY ========== //
 
-// initialize video references - all videos and user's favourite videos
-function init() {
-  // init user data and favourite videos
-  _userRef.doc(_currentUser.uid).onSnapshot({
-    includeMetadataChanges: true
-  }, function (userData) {
-    if (!userData.metadata.hasPendingWrites && userData.data()) {
-      _currentUser = {
-        ...firebase.auth().currentUser,
-        ...userData.data()
-      }; //concating two objects: authUser object and userData objec from the db
-      appendUserData();
-      appendFavVideos(_currentUser.favVideos);
-      if (_movies) {
-        appendVideos(_movies); // refresh movies when user data changes
-      }
-      showLoader(false);
-    }
-  });
+
 
   // init all movies
   _movieRef.onSnapshot(function (snapshotData) {
@@ -147,3 +129,11 @@ async function appendFavVideos(favVideoIds = []) {
 $(".play-button").click(function () {
   $(this).toggleClass("pause");
 })
+
+// heart button
+$(function () {
+
+  $(".heart").on("click", function () {
+    $(this).toggleClass("heart-blast");
+  });
+}); 
