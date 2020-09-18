@@ -69,17 +69,17 @@ function logout() {
 
 
 
-  // init all movies
-  _movieRef.onSnapshot(function (snapshotData) {
-    _movies = [];
-    snapshotData.forEach(function (doc) {
-      let movie = doc.data();
-      movie.id = doc.id;
-      _movies.push(movie);
-    });
-    appendVideos(_movies);
+// init all movies
+_movieRef.onSnapshot(function (snapshotData) {
+  _movies = [];
+  snapshotData.forEach(function (doc) {
+    let movie = doc.data();
+    movie.id = doc.id;
+    _movies.push(movie);
   });
-}
+  appendVideos(_movies);
+});
+
 
 
 // generate the favorite button
