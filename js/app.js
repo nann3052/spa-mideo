@@ -129,3 +129,11 @@ async function appendFavVideos(favVideoIds = []) {
 $(".play-button").click(function () {
   $(this).toggleClass("pause");
 })
+
+// heart button
+$(function () {
+
+  $(".heart").on("click", function () {
+    $(this).toggleClass("heart-blast");
+  });
+}); 
