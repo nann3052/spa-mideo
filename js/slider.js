@@ -23,6 +23,3 @@ function playPause() {
 } 
 
 
-$(".play-button").click(function(){
-  $(this).toggleClass("pause")  ; 
- })

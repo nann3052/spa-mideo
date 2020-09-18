@@ -143,3 +143,7 @@ async function appendFavVideos(favVideoIds = []) {
   document.querySelector('#saved-vid-container').innerHTML = htmlTemplate;
 }
 
+// toggle play button
+$(".play-button").click(function () {
+  $(this).toggleClass("pause");
+})

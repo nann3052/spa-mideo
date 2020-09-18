@@ -118,12 +118,6 @@ width: 50px;
 height: 50px;
 }
 
-#tabbar_saved {
-align-content: left;
-}
-#tabbar_filters{
-
-}
 
 /* Add a color to the active/current link */
 .tabbar a.active {
@@ -179,9 +173,7 @@ align-content: left;
 /* ---------- randomize button ---------- */
 
 .random_button {
-  background-color: #3D5386;
   border: none;
-  color: white;
   padding: 25px;
   text-align: center;
   text-decoration: none;
@@ -192,13 +184,45 @@ align-content: left;
   margin-top: 20px;
   border-radius: 19px;
   font-family: 'Doppio One';
+    background-color: black;
+     -webkit-animation:name 4s infinite;
+}
+@-webkit-keyframes name {
+  0% {
+    background-color: #5FAD88;
+    color: #fff;
+  }
+
+  16.66% {
+    background-color: #FAAB68;
+    color: #ffff;
+  }
+
+  33.33% {
+    background-color: #3D5386;
+    color: white;
+  }
+49.99% {
+  background-color: #FC6851;
+  color: white;
+}
+  66.65% {
+    background-color: #5C609A;
+    color: white;
+  }
+  100% {
+    background-color: #5FAD88;
+    color: white;
+  }
 }
 
 
 
+/* ---------- play/pause button ---------- */
+
 
 .play-button {
-  background-image: url(../img/playknap.png);
+ background-image: url(../img/playknap.png);
   width: 79px;
   height: 79px;
   background-repeat: no-repeat;
@@ -212,7 +236,7 @@ align-content: left;
 
 
 .play-button.pause {
-  background-image: url(../img/pauseknap.png);
+ background-image: url(../img/pauseknap.png);
   width: 79px;
   height: 79px;
   background-repeat: no-repeat;
@@ -230,6 +254,21 @@ align-content: left;
   }
 
 
+  @-webkit-keyframes blackWhite {  
+  0% { background-color: white; }
+  50% { background-color: white; }
+  51% { background-color: black; }
+  100% { background-color: black; }
+}
+
+.blinkdiv {
+    height: 100px;
+    background-color: black;
+    -webkit-animation-name: blackWhite;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 2s; 
+}   
+/* ---------- loader animation ---------- */
 
 @keyframes loader {
   0% {
