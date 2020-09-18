@@ -250,29 +250,7 @@ top:17%;
 /* ---------- play/pause button ---------- */
 
 
-.play-button {
- background-image: url(../img/playknap.png);
-  width: 49px;
-  height: 49px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  margin: 5px;
-}
 
-
-
-
-.play-button.pause {
- background-image: url(../img/pauseknap.png);
- width: 49px;
-  height: 49px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  margin: 5px;
-
-}
 
 
   .play-container {
