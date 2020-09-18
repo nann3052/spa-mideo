@@ -65,58 +65,22 @@ function logout() {
 
 
 
-// ========== MOVIE FUNCTIONALITY ========== //
+// ========== video randomizer button ========== //
 
 
+function random_button() {
+  const array = ['video/chicken.MOV', 'video/froggo.mov', 'video/sangfugl.MOV']
+  var x = Math.floor((Math.random() * array.length));
 
-// init all movies
-_movieRef.onSnapshot(function (snapshotData) {
-  _movies = [];
-  snapshotData.forEach(function (doc) {
-    let movie = doc.data();
-    movie.id = doc.id;
-    _movies.push(movie);
-  });
-  appendVideos(_movies);
-});
+  document.getElementById('divVideo').src = array[x]
 
-
-
-// generate the favorite button
-function generateFavVideosButton(videoId) {
-  let btnTemplate = `
-    <button onclick="addToFavourites('${videoId}')">Add to favourites</button>`;
-  if (_currentUser.favVideos && _currentUser.favVideos.includes(videoId)) {
-    btnTemplate = `
-      <button onclick="removeFromFavourites('${videoId}')" class="rm">Remove from favourites</button>`;
-  }
-  return btnTemplate;
 }
 
-// append favourite movies to the DOM
-async function appendFavVideos(favVideoIds = []) {
-  let htmlTemplate = "";
-  if (favVideoIds.length === 0) {
-    htmlTemplate = "<p>Add videos to favourites.</p>";
-  } else {
-    for (let videoId of favVideosIds) {
-      await _movieRef.doc(videoId).get().then(function (doc) {
-        let video = doc.data();
-        video.id = doc.id;
-        htmlTemplate += `
-        <article>
-          <img src="">
-          <button onclick="removeFromFavourites('${movie.id}')" class="rm">Remove from favourites</button>
-        </article>
-      `;
-      });
-    }
-  }
-  document.querySelector('#saved-vid-container').innerHTML = htmlTemplate;
-}
+
 
 // toggle play button
-$(".play-button").click(function () {
+
+$(".play-button").click(function random_button() {
   $(this).toggleClass("pause");
 })
 
