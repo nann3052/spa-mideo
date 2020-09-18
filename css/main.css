@@ -285,13 +285,17 @@ top:17%;
 
 
 /* --------- Home page -------------*/
-#video {
+#video-container {
   width: 100%;
   margin-top: 5%;
 }
 
 .mideo-logo {
   width: 130px;
+}
+
+#divVideo {
+  width: 100%;
 }
 
 /*------------ Share button --------*/

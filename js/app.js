@@ -69,7 +69,7 @@ function logout() {
 
 
 function random_button() {
-  const array = ['video/chicken.MOV', 'video/froggo.mov', 'video/sangfugl.MOV']
+  const array = ['video/chicken.mp4', 'video/froggo.mp4', 'video/sangfugl.MOV']
   var x = Math.floor((Math.random() * array.length));
 
   document.getElementById('divVideo').src = array[x]
