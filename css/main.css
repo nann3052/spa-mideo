@@ -225,12 +225,11 @@ height: 50px;
 
 .play-button {
  background-image: url(../img/playknap.png);
-  width: 79px;
-  height: 79px;
+  width: 49px;
+  height: 49px;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  cursor: pointer;
   margin: 5px;
 }
 
@@ -239,12 +238,11 @@ height: 50px;
 
 .play-button.pause {
  background-image: url(../img/pauseknap.png);
-  width: 79px;
-  height: 79px;
+ width: 49px;
+  height: 49px;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  cursor: pointer;
   margin: 5px;
 
 }
@@ -252,6 +250,7 @@ height: 50px;
 
   .play-container {
     background-color: #3D5386;
+    height: 60px;
     margin-bottom: 20px;
   }
   
@@ -337,7 +336,7 @@ height: 50px;
 }
 
 /* Change color of dropdown links on hover ----*/
-.dropdown-content a:click,
+.dropdown-content a:click
 {background-color: #ff684f;}
 
 /*------ Show the dropdown menu on hover */
