@@ -580,6 +580,16 @@ background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45
   color:#ff684f;
     font-family: 'Quicksand', sans-serif;
 }
+#login-logo img {
+  width: 100%;
+}
+
+#login-logo {
+  width: 70%;
+  margin-top: 0;
+  margin: auto;
+  display:block;
+}
 
 /*---------- sign up-------*/
 #firebaseui-auth-container {

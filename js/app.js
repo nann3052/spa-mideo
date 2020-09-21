@@ -44,7 +44,7 @@ function userNotAuthenticated() {
 
 // show and hide tabbar
 function hideTabbar(hide) {
-  let tabbar = document.querySelector('#tabbar');
+  let tabbar = document.querySelector('.tabbar');
   if (hide) {
     tabbar.classList.add("hide");
   } else {

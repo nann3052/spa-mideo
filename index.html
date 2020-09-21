@@ -19,32 +19,17 @@
 
 <body onhashchange="pageChange()">
 
-  <!--Welcome Page
-  <section id="welcome">
-    <div id="welcome-page">
-      <img src="img/welcome-logo.png">
-    </div>
-
-  </section>-->
-
-  <!-- tabbar navigation -->
-  <nav id="tabbar" class="tabbar hide">
-    <a id="tabbar_saved" href="#saved"><img src="./img/saved.png" alt="saved_btn">Saved</a>
-    <a id="tabbar_filters" href="#filters"><img src="./img/filters.png" alt="filters_btn">Filters</a>
-  </nav>
-
-  <!-- pages -->
-
-
 
   <!-- Login page -->
   <section id="login" class="page">
-
+    <div id="login-logo"><img src="img/vhs-mideo.png"></div>
     <!-- firebase auth container  -->
     <section id="firebaseui-auth-container"></section>
   </section>
 
   <!-- Home page -->
+
+
 
   <section id="home" class="page">
     <header class="topbar">
@@ -53,6 +38,13 @@
     </header>
 
     <!-- video home page -->
+    <!-- tabbar navigation -->
+    <nav class="tabbar" class="tabbar hide">
+      <a class="tabbar_saved" href="#saved"><img src="./img/saved.png" alt="saved_btn">Saved</a>
+      <a class="tabbar_filters" href="#filters"><img src="./img/filters.png" alt="filters_btn">Filters</a>
+    </nav>
+
+
 
     <div class="likeheart">
       <div class="heart"></div>
@@ -143,6 +135,10 @@
 
   <!-- Saved page -->
   <section id="saved" class="page">
+
+
+
+
     <header class="topbar">
       <a class="left" href="#home" onclick="">
         <img src="img/arrow.png">
@@ -151,6 +147,11 @@
 
     </header>
 
+    <!-- tabbar navigation -->
+    <nav class="tabbar" class="tabbar hide">
+      <a class="tabbar_saved" href="#saved"><img src="./img/saved.png" alt="saved_btn">Saved</a>
+      <a class="tabbar_filters" href="#filters"><img src="./img/filters.png" alt="filters_btn">Filters</a>
+    </nav>
 
     <div class="heading">
       <h3>Saved videos</h3>
@@ -197,6 +198,12 @@
 
   <!-- Filters page -->
   <section id="filters" class="page">
+    <!-- tabbar navigation -->
+    <nav class="tabbar" class="tabbar hide">
+      <a class="tabbar_saved" href="#saved"><img src="./img/saved.png" alt="saved_btn">Saved</a>
+      <a class="tabbar_filters" href="#filters"><img src="./img/filters.png" alt="filters_btn">Filters</a>
+    </nav>
+
 
     <header class="topbar">
       <a class="left" href="#home" onclick="">
