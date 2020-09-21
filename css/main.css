@@ -103,7 +103,7 @@ a.left img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--text-color-light);1
+  color: var(--text-color-light);
   text-align: center;
   width: 50%;
   height: 14%;
@@ -234,7 +234,7 @@ height: 50px;
 height: 100px;
   position: absolute;
   left: 10%;
-top:17%;
+top:14.5%;
   transform: translate(-50%, -50%);
   background: url('https://cssanimation.rocks/images/posts/steps/heart.png') no-repeat;
   z-index:9999;  
@@ -607,6 +607,8 @@ background: linear-gradient(138deg, rgba(49,135,93,1) 0%, rgba(105,145,173,1) 45
   font-family: 'Quicksand', sans-serif;
   mix-blend-mode: color-dodge;
   background-color:rgb(255, 255, 255);
+  margin-top: 15%;
+  
 
 }
 
