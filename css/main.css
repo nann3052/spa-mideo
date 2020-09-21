@@ -93,6 +93,7 @@ a.left img {
   right: 0;
   z-index: 9999;
   display: flex;
+  margin-bottom:-0.5%;
 }
 
 /* Style the links inside the navigation bar */
@@ -102,7 +103,7 @@ a.left img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--text-color-light);
+  color: var(--text-color-light);1
   text-align: center;
   width: 50%;
   height: 14%;
@@ -249,14 +250,11 @@ top:17%;
 
 /* ---------- play/pause button ---------- */
 
-
-
-
-
   .play-container {
     background-color: #3D5386;
     height: 20px;
     margin-bottom: 20px;
+    margin-top:0;
   }
   
 /* ---------- loader animation ---------- */
@@ -294,19 +292,14 @@ top:17%;
   margin-top: 5%;
 }
 
-#video {
-  width: 100%;
-  margin-top: 5%;
-}
-
 .mideo-logo {
   width: 130px;
 }
 
 #divVideo {
   width: 100%;
+  margin-bottom: -1%;
 }
-
 /*------------ Share button --------*/
 
 /* Style The Dropdown Button */
