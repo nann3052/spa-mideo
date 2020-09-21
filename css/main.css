@@ -187,8 +187,10 @@ height: 50px;
   border-radius: 19px;
   font-family: 'Doppio One';
   text-transform: uppercase;
+  outline: #201E2E;
   -webkit-animation:name 15s infinite;
 }
+
 @-webkit-keyframes name {
   0% {
     background-color: #5FAD88;
