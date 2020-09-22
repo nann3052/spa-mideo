@@ -1,10 +1,8 @@
 "use strict";
 
 // ========== GLOBAL VARIABLES ========== //
-const _movieRef = _db.collection("movies");
 const _userRef = _db.collection("users")
 let _currentUser;
-let _movies;
 
 // ========== FIREBASE AUTH ========== //
 // Listen on authentication state change
@@ -57,11 +55,6 @@ function logout() {
   firebase.auth().signOut();
   //
 }
-
-
-
-
-// ========== Welcome page ========== //
 
 
 
